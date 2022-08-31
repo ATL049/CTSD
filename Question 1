@@ -1,0 +1,19 @@
+// Problem 1:
+// Ram and Hanuman measure and find that their houses are 50 miles apart. If they agree to meet at the midpoint between their two houses, how far will each of them travel in kilometres? (HINT: 1 mile = 1.6 Kilometres).
+// Problem Comprehension:
+// • Each person must travel half of the distance to meet at midpoint. So, distance to mid-point to be calculated.
+// • Convert the calculated mid-point distance from miles to kilometres using 1 mile = 1.6 km
+
+#include <stdio.h>
+int main()
+{
+    int m, km;
+    float midpoint;
+    printf("Enter the distance between Ram and Hanuman houses in miles:");
+    scanf("%d", &m);
+    km = m * 1.6;
+    printf("%d", km);
+    midpoint = (float)km/2;
+
+    printf("\nThe distance they should travel to meet in the between is %.2f km", midpoint);
+}
